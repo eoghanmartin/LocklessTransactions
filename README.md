@@ -3,4 +3,9 @@ An investigation into the efficiency of the use of the TSX extension for Intel I
 Random operations were run on a binary search tree (either an add or remove of a random node) using HLE and RTM transactions and a TestAndTestAndSet lock on each operation.
 The operations per second were recorded and the results are contained in the .csv files.
 
+Run command:
+'''
+g++ -o outputFile sharing.cpp helper.cpp -mrtm -mrdrnd -O3 -pthread
+'''
+
 **TODO:** Fix RTM operation.
