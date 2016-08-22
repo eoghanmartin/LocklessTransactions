@@ -51,12 +51,14 @@ As a result of the messy nature of the code used to implement the BST operations
 
 The outputted results for these implementations do not match those to be expected. I would have expected the RTM implementation to be much faster however the results show it to be very similar to the TATAS implementation. This may suggest that the RTM implementation was entering the non transactional path a bit too much and was not using the optimistic transactions to carry out the operations enough.
 
-![alt tag](http://url/to/img.png)
+![alt Legend](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/legend.png)
 
-![alt tag](http://url/to/img.png)
+![alt 16 Nodes](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/results_16Nodes.png)
 
-![alt tag](http://url/to/img.png)
+![alt 256 Nodes](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/results_256Nodes.png)
 
-![alt tag](http://url/to/img.png)
+![alt 4096 Nodes](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/results_4096Nodes.png)
 
-![alt tag](http://url/to/img.png)
+![alt 65536 Nodes](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/results_65536Nodes.png)
+
+![alt 1048576 Nodes](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/results_1048576Nodes.png)
