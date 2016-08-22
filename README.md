@@ -43,7 +43,7 @@ The RTM lockless implementation of this algorithm is a bit more tricky. In explo
 
 **TODO:** Fix RTM operation.
 
-![alt tag](http://url/to/img.png)
+![alt RTM Implementation](https://github.com/eoghanmartin/LocklessTransactions/blob/master/images/RTMImplementation.png)
 
 As a result of the messy nature of the code used to implement the BST operations with RTM, the chart above may make the implementation method somewhat more clear. If the lock is set, the transaction aborts. If it `reaches _xend()` or `lock = 0`, it has completed the operation successfully. The transactionState variable is used to decide whether the execution can enter the critical section transactionally or whether it must use the TATAS lock to get the lock and then enter the critical section.
 
